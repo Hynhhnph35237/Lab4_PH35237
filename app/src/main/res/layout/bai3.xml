@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:orientation="vertical"
+
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       tools:ignore="MissingConstraints">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Bạn muốn mua gì ?"
+           android:gravity="center"
+           android:textStyle="bold"
+           android:textSize="20dp"
+
+           />
+
+       <EditText
+           android:id="@+id/input"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+           tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sau khi nhấn nút gửi hãy đợi nhà bán báo giá"
+        />
+       <Button
+           android:id="@+id/btn_gui"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="Gửi"
+           />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Giá sản phẩm là: "
+               android:gravity="center"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:textColor="#00BCD4"
+               />
+           <TextView
+               android:id="@+id/txt_gia"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="0"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:gravity="center"
+               android:textColor="#E91E63"
+               />
+
+       </LinearLayout>
+   </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
